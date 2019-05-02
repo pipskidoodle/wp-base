@@ -1,19 +1,15 @@
 <?php
 /*
 *Template Name: Index
-*Use: This is used for blog posts, or when a file doesn't exist
+*Use: This is used when no page is associated with a url
 */
 get_header(); ?>
   <?php get_header('secondary'); ?>
   <?php get_header('primary'); ?>
 	<div class="container">
 		<div class="row py-5">
-			<div class="col-12 col-md-8 offset-md-2">
-        <!-- WP Loop Begin -->
-				<?php if ( have_posts() ) { while ( have_posts() ) : the_post(); ?>
-				  <?php the_content(); ?>
-				<?php endwhile;
-				}; ?>
+			<div class="col-12 col-md-8 offset-md-2 text-center">
+				<h1>404</h1>
 			</div>
 		</div>
 	</div>
